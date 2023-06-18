@@ -1,7 +1,7 @@
 import axios from 'axios';
 const baseUrl = "http://localhost:4000";
 const getallTodo = (setTodos) => {
-    axios.get(baseUrl)
+    axios.get(`${baseUrl}/get`)
     .then(({data}) => {
         console.log(data);
         setTodos(data);
