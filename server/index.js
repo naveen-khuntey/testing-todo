@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require('cors');
-const init_db = require('./config/database');
-const todo = require('./routes/todoroute');
+const init_db = require('./app/config/database');
+const todo = require('./app/routes/todoroute');
 require('dotenv').config();
 const app = express();
 
