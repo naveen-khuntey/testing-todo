@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseUrl = process.env.API_URL || "http://localhost:4000";
+const baseUrl = "https://testing-todo-alpha.vercel.app";
 const getallTodo = (setTodos) => {
     axios.get(`${baseUrl}/get`)
     .then(({data}) => {
