@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseUrl = "https://testing-todo-alpha.vercel.app";
+const baseUrl =  "http://localhost:4000/" || "https://testing-todo-alpha.vercel.app";
 const getallTodo = (setTodos) => {
     axios.get(`${baseUrl}/get`)
     .then(({data}) => {
